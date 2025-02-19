@@ -5,13 +5,12 @@ POST http://{{host}}/subscriptions
 Content-Type: application/json
 
 {
-  "name": "Invited",
-  "email": "invited@rocketseat.team",
-  "referrer": "3cc72c15-34b5-4933-b6bf-854ac97dd60d"
+  "name": "ryandvl",
+  "email": "ryandvl@email.com",
 }
 
 ### Access invite link
-GET http://{{host}}/invites/4b7b21d9-2b3a-4146-89a0-60467275ae6a
+GET http://{{host}}/invites/ryandvl
 
 ### Get subscriber invites clicks
 GET http://{{host}}/subscribers/3cc72c15-34b5-4933-b6bf-854ac97dd60d/ranking/clicks

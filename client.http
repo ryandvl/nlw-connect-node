@@ -1,25 +1,27 @@
 @host = localhost:3333
+@id = d7dc7450-e95c-45bc-b926-9c983fd71bce
 
 ### Subscribe to event
 POST http://{{host}}/subscriptions
 Content-Type: application/json
 
 {
-  "name": "ryandvl",
-  "email": "ryandvl@email.com",
+  "name": "Usuário Indicado",
+  "email": "indicado@gmail.com",
+  "referrer": "d7dc7450-e95c-45bc-b926-9c983fd71bce"
 }
 
 ### Access invite link
-GET http://{{host}}/invites/ryandvl
+GET http://{{host}}/invites/{{id}}
 
 ### Get subscriber invites clicks
-GET http://{{host}}/subscribers/3cc72c15-34b5-4933-b6bf-854ac97dd60d/ranking/clicks
+GET http://{{host}}/subscribers/{{id}}/ranking/clicks
 
 ### Get subscriber invites count
-GET http://{{host}}/subscribers/3cc72c15-34b5-4933-b6bf-854ac97dd60d/ranking/count
+GET http://{{host}}/subscribers/{{id}}/ranking/count
 
 ### Get subscriber ranking position
-GET http://{{host}}/subscribers/3cc72c15-34b5-4933-b6bf-854ac97dd60d/ranking/position
+GET http://{{host}}/subscribers/{{id}}/ranking/position
 
 ### Get ranking
 GET http://{{host}}/ranking
